@@ -1,6 +1,6 @@
 import {useState , useEffect} from 'react'
 import "./GradientGenerator.css";
-
+import { Analytics } from '@vercel/analytics/next';
 import randomColor from 'randomcolor';
 function GradientGenerator() {
   const [color1,setColor1] = useState(randomColor());
@@ -40,6 +40,7 @@ function GradientGenerator() {
   }, [color1, color2, angle, gradientType]);
   return (
     <div>
+      <Analytics />
     <div className='outer-container' >
       {gradientType === "linear" ? 
       (<div id="lineargradientDisplay"></div>) 

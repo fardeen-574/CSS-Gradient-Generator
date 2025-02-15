@@ -11,7 +11,8 @@
           "user-select"
         ]
       }
-    ]
+    ],
+    "typescript-config/is-valid": "off"
   },
   "browserslist": [
     "defaults",
