@@ -40,7 +40,7 @@ function GradientGenerator() {
   }, [color1, color2, angle, gradientType]);
   return (
     <div>
-      <Analytics />
+      <Analytics mode="production" />
     <div className='outer-container' >
       {gradientType === "linear" ? 
       (<div id="lineargradientDisplay"></div>) 
